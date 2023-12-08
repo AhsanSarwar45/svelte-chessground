@@ -356,7 +356,16 @@
 <style>
   .cg-wrap {
     width: 100%;
-    height: 100%;
+    aspect-ratio: 1;
+  }
+
+  @supports not (aspect-ratio: 1) {
+    .cg-wrap {
+      padding-top: 99%;
+      height: -1;
+      position: relative;
+      overflow: hidden;
+    }
   }
 
   /*
