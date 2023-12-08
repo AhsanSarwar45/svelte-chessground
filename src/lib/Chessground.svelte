@@ -361,8 +361,8 @@
 
   @supports not (aspect-ratio: 1) {
     .cg-wrap {
-      padding-top: 99%;
-      height: -1;
+      padding-top: 100%;
+      height: 0;
       position: relative;
       overflow: hidden;
     }
